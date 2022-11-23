@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 of JavaScript</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1 align="center">Wellcome to the mirror Text</h1>
+    <div id="inp">
+        <textarea name="texting" id="input" cols="auto" rows="auto" class="field"
+            placeholder="Enter Text To mirror out"></textarea>
+        <br>
+        <div class="cols-2">
+            <div id="mirror" class="result">
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var inp = document.getElementById('input');
+        var cls = document.getElementsByClassName('result');
+        input.addEventListener('input', function (event) {
+            mirror.innerText = event.target.value.split('').join('');
+        });
+    </script>
+
+</body>
+
+</html>
